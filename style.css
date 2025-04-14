@@ -1,0 +1,109 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e90ff;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* FLEX CONTAINER */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.text-section {
+  flex: 1 1 50%;
+}
+
+/* Right Section */
+.image-section {
+  flex: 1 1 40%;
+}
+
+/* ID Selector */
+#main-heading {
+  color: #1e90ff;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Class Selector */
+.intro {
+  color: #333;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+/* Styled Image */
+.styled-img {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid #1e90ff;
+  padding: 5px;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Another Class Selector */
+.content-box {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+/* MEDIA QUERIES for responsiveness */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section, .image-section {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
